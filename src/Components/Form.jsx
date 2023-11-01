@@ -7,7 +7,7 @@ const Form = () => {
 emailjs.init("0prUY5C31-o_Df6RE")
 
 // destinatario si es uno solo
-const emailTo = "mica.spadavecchia@gmail.com";
+const emailTo = "mayoristasitati@hotmail.com";
 
 const handleSubmit = (evt) => {
     evt.preventDefault()
@@ -27,8 +27,8 @@ const handleSubmit = (evt) => {
 
 
   return (
-    <form id="contact-form" onSubmit={handleSubmit} value={Math.random() * 100000 | 0}>
-    <input type="hidden" name="contact_number"/>
+    <form id="contact-form" onSubmit={handleSubmit}>
+    <input type="hidden" name="contact_number"  value={Math.random() * 100000 | 0}/>
     <label>Name</label>
     <input type="text" name="user_name"/>
     <label>Email</label>
